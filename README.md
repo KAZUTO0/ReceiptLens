@@ -2,11 +2,22 @@
 
 **Turning receipt images into structured data with an open-weight vision-language model and LoRA fine-tuning.**
 
-ReceiptLens is a Python-based experiment and interactive demo that extracts **merchant name, date, address, and total** from scanned receipts. It fine-tunes **Google Gemma 4 E2B** using **Unsloth + LoRA**, then compares the adapted model with the original model on the same receipt images.
+ReceiptLens is a Python-based experiment and interactive demo that extracts **merchant name, date, address, total amount, receipt/transaction number, and contact number** from scanned receipts. It fine-tunes **Google Gemma 4 E2B** using **Unsloth + LoRA**, then compares the adapted model with the original model on the same receipt images.
 
 Built for **HacktoberFest Hack Day — Open-Source AI, Theme 3B: Receipt Information Extraction**.
 
-> **Experimental project, not production-ready OCR.** Results below are from a 30-receipt evaluation shared from a Colab run. They are preliminary and should not be treated as performance guarantees across different receipt types.
+> **Experimental project, not production-ready OCR.** Results below are from a 30-receipt evaluation shared from a Colab run. On a 30-receipt test sample, complete extraction accuracy improved from 20% to 30%, with improvements in merchant, date, and total extraction.
+
+**Tech Stack:** Python, Gemma 4 E2B, Unsloth, LoRA, Hugging Face, PyTorch, Google Colab, and Gradio
+
+## Key Features:
+
+- AI-powered receipt information extraction
+- Fine-tuned multimodal vision-language model
+- Editable extracted fields and JSON/CSV exports
+- Receipt history and spending analytics dashboard
+- Baseline vs. fine-tuned model evaluation
+- Parameter-efficient training using LoRA
 
 ## Highlights
 
