@@ -43,7 +43,7 @@ An initial evaluation on **30 SROIE receipt images** produced the following resu
 | Total | 80.0% | **83.3%** | +3.3 pp |
 | **All four fields correct** | **20.0% (6/30)** | **30.0% (9/30)** | **+10.0 pp** |
 
-![Comparison of original and fine-tuned Gemma 4 receipt-extraction accuracy](assets/accuracy_comparison.png)
+![Comparison of original and fine-tuned Gemma 4 receipt-extraction accuracy](ReceiptLens_HackDay/assets/accuracy_comparison.png)
 
 **Interpretation:** complete-receipt accuracy increased by **10 percentage points** (a **50% relative improvement**), while address extraction regressed. Although the experiment shows an improvement on this sample, **21 of 30 receipts still had at least one incorrect field**. The test set is small, and these differences are not proof of a robust improvement on new receipt populations.
 
