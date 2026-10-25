@@ -1,0 +1,4 @@
+pillow>=10.0,<12
+pandas>=2.0,<3
+pytest>=8,<10
+matplotlib>=3.7,<4
